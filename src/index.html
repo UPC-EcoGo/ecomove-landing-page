@@ -48,6 +48,110 @@
         </ul>
       </div>
     </nav>
+    <main class='mx-auto'>
+      <section id='home' class='px-8 2xl:px-36 pt-28 pb-7 flex flex-col md:flex-row justify-around items-center md:align-normal gap-4 min-h-[100dvh]'>
+        <div data-aos='zoom-in' data-aos-duration='800' class='flex flex-col justify-center items-center md:items-start gap-6 xl:gap-8 md:w-fit md:max-w-[600px] xl:w-1/2 text-center md:text-left'>
+          <h1 class='font-bold text-balance leading-tight text-2xl sm:text-4xl md:text-6xl' >TU VIAJE HACIA LA SOSTENIBILIDAD COMIENZA AQUÍ</h1>
+          <p class='font-medium md:text-lg xl:text-2xl text-balance xl:text-pretty'>Simplificamos el acceso a la movilidad sostenible al conectar a usuarios con scooters y bicicletas eléctricas para alquilar. Promovemos el uso responsable de estos vehículos, contribuyendo así un entorno urbano más limpio y saludable.</p>
+          <button class='font-semibold relative flex justify-center py-3 border rounded-md border-none text-white bg-cyan-600 hover:bg-cyan-800 text-lg xl:text-xl w-full max-w-md'>Reserva ahora!</button>
+        </div>
+        <div data-aos='zoom-in' data-aos-duration='800' class='flex justify-center items-center md:w-3/5 xl:w-1/2'>
+          <img alt="dog" class='t-shadow mx-auto w-[400px] md:w-auto md:max-h-[650px] ' src='../assets/scooter.png' />
+        </div>
+      </section>
+      <section id='about-us' class='px-8 2xl:px-36 py-7 flex flex-col md:flex-row justify-around items-center md:align-normal gap-4 min-h-[40dvh] md:min-h-[70dvh] '>
+        <div data-aos='zoom-in' data-aos-duration='800' class='hidden md:flex justify-center items-center md:w-3/5 xl:w-1/2'>
+          <img alt="dog" class=' mx-auto w-auto md:max-h-[650px]' src='../assets/ecogo.jpeg' />
+        </div>
+        <div data-aos='zoom-in' data-aos-duration='800' class='flex flex-col justify-center items-center md:items-start gap-6 xl:gap-8 md:w-fit md:max-w-[600px] xl:w-1/2 text-center md:text-left'>
+          <h2 class='font-bold text-balance leading-tight text-2xl sm:text-4xl md:text-6xl' >SOMOS ECOGO</h2>
+          <p class='font-medium text-lg xl:text-2xl text-balance xl:text-pretty'>Estamos comprometidos con la transformación de la movilidad urbana. Nuestra misión es simplificar el acceso a la movilidad sostenible al ofrecer una plataforma intuitiva que conecta a usuarios con scooters y bicicletas eléctricas disponibles para alquiler.</p>
+        </div>
+      </section>
+      <section id='services' class='px-9 py-7 flex flex-col justify-center items-center gap-y-12 min-h-[70dvh] bg-slate-200 relative'>
+        <h2 class='font-bold text-2xl sm:text-4xl md:text-6xl'>TIPOS DE MEMBRESÍAS</h2>
+        <div class='flex flex-col lg:flex-row gap-x-40 gap-y-10'>
+          <div data-aos='fade-up' class='flex flex-col justify-center items-center bg-cyan-100 p-8 w-72 border-none rounded-3xl gap-y-3'>
+            <h3 class='text-center text-3xl font-bold'>Membresía Estándar</h3>
+            <p class='text-center'>Precio asequible para usuarios ocasionales.</p>
+            <ul>
+              <li class='list-disc text-center'>Acceso a una cantidad limitada de viajes al mes, por ejemplo, 5 viajes.</li>
+              <li class='list-disc text-center'>Tiempo de alquiler limitado por viaje.</li>
+              <li class='list-disc text-center'>Sin beneficios adicionales.</li>
+            </ul>
+            <p>S/. 24.99</p>
+            <button class='px-4 py-2 border-none rounded-2xl bg-white'>Más información</button>
+          </div>
+          <div data-aos='fade-down' class='flex flex-col justify-center items-center bg-cyan-100 p-8 w-72 border-none rounded-3xl gap-y-3'>
+            <h3 class='text-center text-3xl font-bold'>Membresía Premium</h3>
+            <p class='text-center'>Tarifa mensual más alta con beneficios adicionales.</p>
+            <ul>
+              <li class='list-disc text-center'>Acceso ilimitado a viajes al mes.</li>
+              <li class='list-disc text-center'>Tiempo de alquiler extendido por viaje.</li>
+              <li class='list-disc text-center'>Prioridad de acceso en zonas con alta demanda.</li>
+            </ul>
+            <p>S/. 39.99</p>
+            <button class='px-4 py-2 border-none rounded-2xl bg-white'>Más información</button>
+          </div>
+          <div data-aos='fade-up' class='flex flex-col justify-center items-center bg-cyan-100 p-8 w-72 border-none rounded-3xl gap-y-3'>
+            <h3 class='text-center text-3xl font-bold'>Membresía Élite</h3>
+            <p class='text-center'>Para usuarios que buscan una experiencia extraordinaria.</p>
+            <ul>
+              <li class='list-disc text-center'>Acceso ilimitado a viajes al mes.</li>
+              <li class='list-disc text-center'>Tiempo de alquiler ilimitado por viaje.</li>
+              <li class='list-disc text-center'>Prioridad de acceso en todas las ubicaciones</li>
+            </ul>
+            <p>S/. 49.99</p>
+            <button class='px-4 py-2 border-none rounded-2xl bg-white'>Más información</button>
+          </div>
+        </div>
+      </section>
+      <section id='vehicles' class='px-8 py-8 flex flex-col justify-center items-center gap-8 min-h-[80dvh] relative bg-slate-300'>
+        <h2 class='font-bold text-balance text-center leading-tight text-2xl sm:text-4xl md:text-6xl'>ENCUENTRA VEHÍCULOS CERCANOS</h2>
+        <div id='map' data-aos='zoom-in' class='w-2/3 h-[500px]'></div>
+      </section>
+      <section id='contact-us' class='px-8 2xl:px-36 py-10 flex flex-col items-center gap-8 min-h-[40dvh]'>
+        <h2 class='font-bold text-balance leading-tight text-2xl sm:text-4xl md:text-6xl'>CONTÁCTANOS</h2>
+        <p class='font-medium text-lg text-center xl:text-2xl text-balance xl:text-pretty'>Escribe tu duda en el cuadro de abajo, ¡nuestro equipo de soporte no se demorará en contactarse contigo!.</p>
+        <form data-aos='zoom-in' data-aos-duration='800' class='flex flex-col items-center  gap-8 w-full max-w-xl'>
+          <input type='email' class='w-full max-w-lg p-4 border-none rounded-md bg-gray-200' placeholder='Ingresa tu correo electrónico'>
+        <textarea class='w-full max-w-lg p-4 border-none rounded-md bg-gray-200' placeholder='Escribe tu mensaje aquí' ></textarea>
+        <button class='font-semibold relative flex justify-center py-3 border rounded-md border-none text-white bg-cyan-600 hover:bg-cyan-800 text-lg xl:text-xl w-full max-w-lg'>Enviar</button>
+        </form>
+      </section>
+    </main>
+    <footer data-aos='fade-up' class='flex flex-col md:flex-row justify-around items-center md:items-start w-full px-6 py-7 font-semibold bg-cyan-600 text-white'>
+      <div class='md:w-3/12 flex flex-col justify-start gap-y-2'>
+        <div class='flex items-center gap-x-4 relative'>
+          <div class='flex'>
+            <div class='flex gap-1 hover:opacity-75 transition items-center'>
+              <img src='../assets/logo.png' alt="logo" class='size-16' />
+              <p class='hidden sm:flex text-2xl'>EcoMove</p>
+            </div>
+          </div>
+        </div>
+        <p class='hidden lg:block'>Fomentamos un futuro urbano más limpio y saludable conectando a usuarios con alternativas de transporte eléctrico, ¡porque cada viaje cuenta para un mundo más sostenible!</p>
+      </div>
+      <div class='flex gap-x-16'>
+        <div class='h-60'>
+          <p>Links</p>
+          <ul class='font-normal'>
+            <li><a href='log-in.html'>Iniciar sesión</a></li>
+            <li><a href='sign-in.html'>Registrarse</a></li>
+            <li><a href='#'>Restaurar contraseña</a></li>
+            <li><a href='#'>Contact</a></li>
+          </ul>
+        </div>
+        <div class='h-60'>
+          <p>Redes sociales</p>
+          <ul class='font-normal'>
+            <li><a href='#'>Facebook</a></li>
+            <li><a href='#'>Instagram</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBuSs79c8S31axdcv3ACxaz635_EsnT2-I&callback=initMap" defer></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./main.js"></script>
   </body>
